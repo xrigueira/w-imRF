@@ -18,6 +18,8 @@ from utils import attention_plotter, multivariate_attention_plotter, threshold_p
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+"""This file implements the Visual Paths algorithm"""
+
 def get_starts_ends(num_win_high, num_win_med, num_win_low):
 
     """Extacts the start and end window index for each resolution and save it in a 2D list"""
