@@ -221,6 +221,8 @@ class imRF():
             mean_ammonium = np.mean(data_background.ammonium_901)
         elif self.station == 905:
             mean_ammonium = np.mean(data_background.ammonium_905)
+        elif self.station == 906:
+            mean_ammonium = np.mean(data_background.ammonium_906)
         elif self.station == 907:
             mean_ammonium = np.mean(data_background.ammonium_907)
         data_background = data_background.groupby(data_background['date'].dt.date).filter(lambda x: x[f'ammonium_{self.station}'].max() <= mean_ammonium)
